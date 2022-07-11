@@ -1,7 +1,6 @@
-import sys
-
 import cv2
 import numpy as np
+import sys
 
 
 def bgr2gray(img: np.ndarray) -> np.ndarray:
