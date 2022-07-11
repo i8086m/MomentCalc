@@ -4,4 +4,4 @@ project(MomentCalc)
 set(CMAKE_CXX_STANDARD 14)
 
 add_executable(MomentCalc
-        main.cpp Matrix.cpp Matrix.h MomentMatrix.cpp MomentMatrix.h)
+        main.cpp Matrix.cpp MomentMatrix.cpp)
