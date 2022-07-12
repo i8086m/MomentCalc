@@ -14,6 +14,10 @@ Matrix::Matrix(int x, int y, const  std::string& fileName)  : xSize(x), ySize(y)
     fin.close();
 };
 
+Matrix::~Matrix() {
+    delete [] mat;
+}
+
 double Matrix::get(int x, int y) {
     return ( (double)mat[y*xSize+x] / 255 );
 }

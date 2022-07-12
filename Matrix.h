@@ -15,6 +15,8 @@ protected:
 public:
     Matrix(int x, int y, const std::string& fileName);
 
+    ~Matrix();
+
     double get(int x, int y);
 };
 
