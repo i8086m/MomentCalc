@@ -12,12 +12,12 @@ Matrix::Matrix(int x, int y, const  std::string& fileName)  : xSize(x), ySize(y)
     fin.read((char*)(mat), xSize * ySize);
 
     fin.close();
-};
+}
 
 Matrix::~Matrix() {
     delete [] mat;
 }
 
 double Matrix::get(int x, int y) {
-    return ( (double)mat[y*xSize+x] / 255 );
+    return ((double)mat[y*xSize+x] / 255);
 }
